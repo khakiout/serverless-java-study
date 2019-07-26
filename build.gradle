@@ -1,22 +1,75 @@
-plugins {
-	id 'org.springframework.boot' version '2.1.6.RELEASE'
-	id 'java'
+allprojects {
+
+	apply plugin: 'java'
+
+	repositories {
+		mavenCentral()
+	}
+
+	version = '0.0.1-SNAPSHOT'
+
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+
 }
 
-apply plugin: 'io.spring.dependency-management'
+def checkstyleCfg = "${projectDir}/config/modified_google_checks.xml" as File
 
-group = 'com.khakiout'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+subprojects {
 
-repositories {
-	mavenCentral()
+	apply plugin: 'eclipse'
+	apply plugin: 'checkstyle'
+	apply plugin: 'findbugs'
+	apply plugin: 'pmd'
+
+	task buildZip(type: Zip) {
+		archiveName = "${project.name}.zip"
+		from compileJava
+		from processResources
+		into('lib') {
+			from configurations.compileClasspath
+		}
+	}
+	build.dependsOn buildZip
+
+	checkstyle {
+		configFile = checkstyleCfg
+		toolVersion = '8.12'
+		ignoreFailures = false
+		sourceSets = [project.sourceSets.main]
+	}
+	build.dependsOn checkstyleMain
+
+	findbugs {
+		toolVersion = '3.0.1'
+		sourceSets = [project.sourceSets.main]
+		effort = 'max'
+	}
+	tasks.withType(FindBugs) {
+		reports {
+			xml.enabled = false
+			html.enabled = true
+		}
+	}
+
+	pmd {
+		toolVersion = '5.4.2'
+		sourceSets = [project.sourceSets.main]
+	}
+
+	compileJava {
+		options.encoding = 'UTF-8'
+		options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+	}
+
+	compileTestJava {
+		options.encoding = 'UTF-8'
+		options.compilerArgs << "-Xlint:unchecked" << "-proc:none"
+	}
+
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-jersey'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'io.projectreactor:reactor-test'
+	compile project(':template')
 }
+

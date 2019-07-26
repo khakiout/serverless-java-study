@@ -3,4 +3,5 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
+include 'template'
 rootProject.name = 'komiks-api'
