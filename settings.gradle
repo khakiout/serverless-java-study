@@ -4,4 +4,6 @@ pluginManagement {
 	}
 }
 include 'template'
+include 'users'
+include 'inventory'
 rootProject.name = 'komiks-api'
