@@ -1,11 +1,11 @@
-package com.khakiout.api.interfaces.serverless.aws;
+package com.komiks.api.interfaces.serverless.aws;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-import com.khakiout.api.interfaces.serverless.aws.model.ApiGatewayProxyRequest;
-import com.khakiout.api.interfaces.serverless.aws.model.ApiGatewayProxyResponse;
-import com.khakiout.api.interfaces.serverless.aws.reactive.SimpleApiGatewayProxyServerHttpRequest;
-import com.khakiout.api.interfaces.serverless.aws.reactive.SimpleApiGatewayProxyServerHttpResponse;
+import com.komiks.api.interfaces.serverless.aws.model.ApiGatewayProxyRequest;
+import com.komiks.api.interfaces.serverless.aws.model.ApiGatewayProxyResponse;
+import com.komiks.api.interfaces.serverless.aws.reactive.SimpleApiGatewayProxyServerHttpRequest;
+import com.komiks.api.interfaces.serverless.aws.reactive.SimpleApiGatewayProxyServerHttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.server.reactive.HttpHandler;

@@ -1,6 +1,6 @@
-package com.khakiout.api.domain.exception;
+package com.komiks.api.domain.exception;
 
-import com.khakiout.api.domain.validation.response.ValidationErrorItem;
+import com.komiks.api.domain.validation.response.ValidationErrorItem;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.validation.FieldError;

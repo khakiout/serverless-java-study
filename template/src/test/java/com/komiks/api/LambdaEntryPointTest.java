@@ -1,4 +1,4 @@
-package com.khakiout.api;
+package com.komiks.api;
 
 import org.junit.Test;
 import org.springframework.http.server.reactive.HttpHandler;

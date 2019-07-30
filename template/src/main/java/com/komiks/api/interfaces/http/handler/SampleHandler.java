@@ -1,4 +1,4 @@
-package com.khakiout.api.interfaces.http.handler;
+package com.komiks.api.interfaces.http.handler;
 
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;

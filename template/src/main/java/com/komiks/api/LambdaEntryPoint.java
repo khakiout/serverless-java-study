@@ -1,7 +1,7 @@
-package com.khakiout.api;
+package com.komiks.api;
 
 import com.amazonaws.services.lambda.runtime.Context;
-import com.khakiout.api.interfaces.serverless.aws.ApiGatewayProxyHandler;
+import com.komiks.api.interfaces.serverless.aws.ApiGatewayProxyHandler;
 import java.util.Collections;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;

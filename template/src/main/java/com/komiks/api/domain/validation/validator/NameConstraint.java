@@ -1,4 +1,4 @@
-package com.khakiout.api.domain.validation.validator;
+package com.komiks.api.domain.validation.validator;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;

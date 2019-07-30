@@ -1,9 +1,9 @@
-package com.khakiout.api.interfaces.http.handler;
+package com.komiks.api.interfaces.http.handler;
 
-import com.khakiout.api.interfaces.http.models.response.GenericBadRequestResponse;
-import com.khakiout.api.interfaces.http.models.response.GenericForbiddenResponse;
-import com.khakiout.api.interfaces.http.models.response.GenericMessageResponse;
-import com.khakiout.api.interfaces.http.models.response.NotFoundResponse;
+import com.komiks.api.interfaces.http.models.response.GenericBadRequestResponse;
+import com.komiks.api.interfaces.http.models.response.GenericForbiddenResponse;
+import com.komiks.api.interfaces.http.models.response.GenericMessageResponse;
+import com.komiks.api.interfaces.http.models.response.NotFoundResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.server.ServerResponse;

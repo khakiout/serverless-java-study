@@ -1,4 +1,4 @@
-package com.khakiout.api.interfaces.serverless.aws.model;
+package com.komiks.api.interfaces.serverless.aws.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.AbstractMap;

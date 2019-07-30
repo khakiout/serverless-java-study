@@ -1,6 +1,6 @@
-package com.khakiout.api.interfaces.serverless.aws.reactive;
+package com.komiks.api.interfaces.serverless.aws.reactive;
 
-import com.khakiout.api.interfaces.serverless.aws.model.ApiGatewayProxyRequest;
+import com.komiks.api.interfaces.serverless.aws.model.ApiGatewayProxyRequest;
 import java.net.InetSocketAddress;
 import java.net.URI;
 import java.net.URISyntaxException;

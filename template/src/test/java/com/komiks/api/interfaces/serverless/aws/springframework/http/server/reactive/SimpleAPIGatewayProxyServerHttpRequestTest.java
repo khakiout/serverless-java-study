@@ -1,10 +1,10 @@
-package com.khakiout.api.interfaces.serverless.aws.springframework.http.server.reactive;
+package com.komiks.api.interfaces.serverless.aws.springframework.http.server.reactive;
 
 import static junit.framework.TestCase.assertNotNull;
 import static org.hamcrest.CoreMatchers.is;
 
-import com.khakiout.api.interfaces.serverless.aws.model.ApiGatewayProxyRequest;
-import com.khakiout.api.interfaces.serverless.aws.reactive.SimpleApiGatewayProxyServerHttpRequest;
+import com.komiks.api.interfaces.serverless.aws.model.ApiGatewayProxyRequest;
+import com.komiks.api.interfaces.serverless.aws.reactive.SimpleApiGatewayProxyServerHttpRequest;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;

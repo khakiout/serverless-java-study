@@ -1,4 +1,4 @@
-package com.khakiout.api.domain.validation.response;
+package com.komiks.api.domain.validation.response;
 
 public class ValidationErrorItem {
 

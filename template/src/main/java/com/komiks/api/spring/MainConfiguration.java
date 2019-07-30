@@ -1,7 +1,7 @@
-package com.khakiout.api.spring;
+package com.komiks.api.spring;
 
-import com.khakiout.api.interfaces.http.handler.SampleHandler;
-import com.khakiout.api.interfaces.http.router.SampleRouter;
+import com.komiks.api.interfaces.http.handler.SampleHandler;
+import com.komiks.api.interfaces.http.router.SampleRouter;
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.khakiout.api.interfaces.http.models.response;
+package com.komiks.api.interfaces.http.models.response;
 
 /**
  * Generic bad request response.

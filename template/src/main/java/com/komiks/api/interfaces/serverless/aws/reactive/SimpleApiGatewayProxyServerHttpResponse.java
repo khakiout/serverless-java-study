@@ -1,6 +1,6 @@
-package com.khakiout.api.interfaces.serverless.aws.reactive;
+package com.komiks.api.interfaces.serverless.aws.reactive;
 
-import com.khakiout.api.interfaces.serverless.aws.model.ApiGatewayProxyResponse;
+import com.komiks.api.interfaces.serverless.aws.model.ApiGatewayProxyResponse;
 import java.util.Collection;
 import java.util.Objects;
 import org.reactivestreams.Publisher;
