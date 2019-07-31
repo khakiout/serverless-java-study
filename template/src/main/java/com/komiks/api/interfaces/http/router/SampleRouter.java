@@ -1,8 +1,8 @@
-package com.khakiout.api.interfaces.http.router;
+package com.komiks.api.interfaces.http.router;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 
-import com.khakiout.api.interfaces.http.handler.SampleHandler;
+import com.komiks.api.interfaces.http.handler.SampleHandler;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;

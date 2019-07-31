@@ -18,10 +18,41 @@ package:
 functions:
   template:
     handler: com.komiks.api.LambdaEntryPoint::handleRequest
-    timeout: 30
     package:
       artifact: template/build/distributions/template.zip
     events:
       - http:
           path: /template/{proxy+}
           method: any
+  inventory:
+    handler: com.komiks.api.LambdaEntryPoint::handleRequest
+    package:
+      artifact: inventory/build/distributions/inventory.zip
+    events:
+      - http:
+          path: /inventory/{proxy+}
+          method: any
+  users:
+    handler: com.komiks.api.LambdaEntryPoint::handleRequest
+    package:
+      artifact: users/build/distributions/users.zip
+    events:
+      - http:
+          path: /users/{proxy+}
+          method: any
+  listProducts:
+    handler: com.komiks.api.ListProductsHandler
+    package:
+      artifact: products/build/distributions/products.zip
+    events:
+      - http:
+          path: /products
+          method: get
+  getProduct:
+    handler: com.komiks.api.GetProductHandler
+    package:
+      artifact: products/build/distributions/products.zip
+    events:
+      - http:
+          path: /products/{id}
+          method: get
