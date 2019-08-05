@@ -1,0 +1,4 @@
+dependencies {
+    implementation('commons-validator:commons-validator:1.4.0')
+    implementation('javax.validation:validation-api:2.0.0.Final')
+}
