@@ -5,9 +5,9 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 /**
- * A sample handler.
+ * User handler.
  */
-public class SampleHandler extends Handler {
+public class UserHandler extends Handler {
 
     public Mono<ServerResponse> getMessage(ServerRequest request) {
         return this.returnGenericMessageResponse("Hello Users");

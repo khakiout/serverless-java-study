@@ -1,13 +1,10 @@
 package com.komiks.api.spring;
 
-import com.komiks.api.interfaces.http.handler.SampleHandler;
+import com.komiks.api.interfaces.http.handler.UserHandler;
 import com.komiks.api.interfaces.http.router.SampleRouter;
-import java.io.FileInputStream;
-import java.io.IOException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
-import org.springframework.web.reactive.function.server.ServerResponse;
 
 
 @Configuration
@@ -19,19 +16,19 @@ public class MainConfiguration {
      * @return the handler
      */
     @Bean
-    public SampleHandler sampleHandler() {
-        return new SampleHandler();
+    public UserHandler sampleHandler() {
+        return new UserHandler();
     }
 
     /**
      * Bean for SampleRouter.
-     * @param sampleHandler the related handler.
+     * @param userHandler the related handler.
      *
      * @return the router
      */
     @Bean
-    public RouterFunction sampleRouter(SampleHandler sampleHandler) {
-        return new SampleRouter().sampleRouter(sampleHandler);
+    public RouterFunction sampleRouter(UserHandler userHandler) {
+        return new SampleRouter().sampleRouter(userHandler);
     }
 
 }
