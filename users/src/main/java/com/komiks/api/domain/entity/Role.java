@@ -1,4 +1,4 @@
-package komiks.api.domain.entity;
+package com.komiks.api.domain.entity;
 
 /**
  * List of possible roles for the user.

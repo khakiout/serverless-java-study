@@ -1,9 +1,5 @@
 package com.komiks.api;
 
-import static org.springframework.web.reactive.function.server.RequestPredicates.path;
-import static org.springframework.web.reactive.function.server.RouterFunctions.route;
-import static org.springframework.web.reactive.function.server.ServerResponse.ok;
-
 import com.komiks.api.spring.MainConfiguration;
 import org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;
 import org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration;

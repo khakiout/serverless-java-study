@@ -1,23 +1,33 @@
 package com.komiks.api.spring;
 
+import com.komiks.api.application.UserApplication;
 import com.komiks.api.interfaces.http.handler.UserHandler;
-import com.komiks.api.interfaces.http.router.SampleRouter;
+import com.komiks.api.interfaces.http.router.UserRouter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
-
 
 @Configuration
 public class MainConfiguration {
 
     /**
-     * Bean for SampleHandler.
+     * Bean for the User Application.
      *
+     * @return the user application
+     */
+    @Bean
+    public UserApplication userApplication() {
+        return new UserApplication();
+    }
+
+    /**
+     * Bean for SampleHandler.
+     * @param userApplication the user application
      * @return the handler
      */
     @Bean
-    public UserHandler sampleHandler() {
-        return new UserHandler();
+    public UserHandler userHandler(UserApplication userApplication) {
+        return new UserHandler(userApplication);
     }
 
     /**
@@ -27,8 +37,8 @@ public class MainConfiguration {
      * @return the router
      */
     @Bean
-    public RouterFunction sampleRouter(UserHandler userHandler) {
-        return new SampleRouter().sampleRouter(userHandler);
+    public RouterFunction userRouter(UserHandler userHandler) {
+        return new UserRouter(userHandler).getMapping();
     }
 
 }
