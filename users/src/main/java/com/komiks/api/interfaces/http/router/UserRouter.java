@@ -23,7 +23,8 @@ public class UserRouter {
      */
     public RouterFunction<ServerResponse> getMapping() {
         return RouterFunctions
-            .route(GET("/users/:username"), userHandler::getUser);
+            .route(GET("/users/"), userHandler::getUsers)
+            .andRoute(GET("/users/:username"), userHandler::getUser);
     }
 
 }
