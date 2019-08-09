@@ -5,9 +5,8 @@ package com.komiks.api.interfaces.http.models.response;
  */
 public class GenericForbiddenResponse extends BaseResponse {
 
-    public final String details = "You are not authorized to perform this action.";
-
     public GenericForbiddenResponse() {
-        super("Forbidden");
+        super(403, "Forbidden");
+        this.setMessage("You are not authorized to perform this action.");
     }
 }

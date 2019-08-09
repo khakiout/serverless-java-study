@@ -3,6 +3,7 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
+include 'commons'
 include 'template'
 include 'users'
 include 'inventory'

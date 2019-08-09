@@ -5,9 +5,8 @@ package com.komiks.api.interfaces.http.models.response;
  */
 public class NotFoundResponse extends BaseResponse {
 
-    public final String details = "Entity not found.";
-
     public NotFoundResponse() {
-        super("NotFound");
+        super(404, "NotFound");
+        this.setMessage("Resource not found.");
     }
 }

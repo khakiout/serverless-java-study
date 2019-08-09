@@ -5,10 +5,9 @@ package com.komiks.api.interfaces.http.models.response;
  */
 public class GenericBadRequestResponse extends BaseResponse {
 
-    public final String details = "Bad request.";
-
     public GenericBadRequestResponse() {
-        super("BadRequest");
+        super(400, "BadRequest");
+        this.setMessage("Bad request");
     }
 
 }

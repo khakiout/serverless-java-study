@@ -8,7 +8,7 @@ public class GenericMessageResponse extends BaseResponse {
     public final String message;
 
     public GenericMessageResponse(String message) {
-        super("Message");
+        super(200, "Message");
         this.message = message;
     }
 
