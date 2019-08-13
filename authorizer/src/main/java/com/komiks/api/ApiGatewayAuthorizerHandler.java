@@ -16,8 +16,9 @@ package com.komiks.api;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.komiks.api.model.AuthPolicy;
-import com.komiks.api.model.AuthPolicy.HttpMethod;
 import com.komiks.api.model.TokenAuthorizerContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Handles IO for a Java Lambda function as a custom authorizer for API Gateway.
@@ -27,11 +28,13 @@ import com.komiks.api.model.TokenAuthorizerContext;
 public class ApiGatewayAuthorizerHandler implements
     RequestHandler<TokenAuthorizerContext, AuthPolicy> {
 
+    private Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     public AuthPolicy handleRequest(TokenAuthorizerContext input, Context context) {
 
         String token = input.getAuthorizationToken();
-        System.out.println("Token is " + token);
+        logger.info("Token is {}", token);
 
         // validate the incoming token
         // and produce the principal user identifier associated with the token
@@ -40,7 +43,7 @@ public class ApiGatewayAuthorizerHandler implements
         // 1. Call out to OAuth provider
         // 2. Decode a JWT token in-line
         // 3. Lookup in a self-managed DB
-        String principalId = "xxxx";
+//        String principalId = "xxxx";
 
         // if the client token is not recognized or invalid
         // you can send a 401 Unauthorized response to the client by failing like so:
@@ -54,6 +57,7 @@ public class ApiGatewayAuthorizerHandler implements
         // configured on the method that was called
 
         String methodArn = input.getMethodArn();
+        logger.info("ARN is {}", methodArn);
         String[] arnPartials = methodArn.split(":");
         String region = arnPartials[3];
         String awsAccountId = arnPartials[4];
@@ -65,6 +69,7 @@ public class ApiGatewayAuthorizerHandler implements
         if (apiGatewayArnPartials.length == 4) {
             resource = apiGatewayArnPartials[3];
         }
+        logger.info("Resource {}", resource);
 
         // this function must generate a policy that is associated with the recognized
         // principal user identifier.
@@ -76,13 +81,20 @@ public class ApiGatewayAuthorizerHandler implements
         // made with the same token
 
         // the example policy below denies access to all resources in the RestApi
-        System.out.println(httpMethod);
-        return new AuthPolicy(principalId,
-            AuthPolicy.PolicyDocument.getAllowOnePolicy(region, awsAccountId, restApiId, stage,
-                HttpMethod.ALL, resource));
-//            AuthPolicy.PolicyDocument.getAllowAllPolicy(region, awsAccountId, restApiId, stage));
-//        return new AuthPolicy(principalId,
-//            AuthPolicy.PolicyDocument.getDenyAllPolicy(region, awsAccountId, restApiId, stage));
+        logger.info("HTTP method {}.", httpMethod);
+        AuthPolicy.PolicyDocument policyDocument = null;
+        if (token == null || token.isEmpty()) {
+            logger.warn("No user");
+            policyDocument = AuthPolicy.PolicyDocument
+                .getDenyAllPolicy(region, awsAccountId, restApiId, stage);
+        } else {
+            policyDocument = AuthPolicy.PolicyDocument
+                .getAllowAllPolicy(region, awsAccountId, restApiId, stage);
+        }
+
+        logger.info("PolicyDoc\n{}", policyDocument.getStatement());
+        String principalId = "xxxx";
+        return new AuthPolicy(principalId, policyDocument);
     }
 
 }
