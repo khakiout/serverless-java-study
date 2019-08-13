@@ -40,11 +40,11 @@ functions:
     handler: com.komiks.api.LambdaEntryPoint::handleRequest
     package:
       artifact: users/build/distributions/users.zip
-    authorizer: auth
     events:
       - http:
           path: /users/{proxy+}
           method: any
+          authorizer: auth
   listProducts:
     handler: com.komiks.api.ListProductsHandler
     package:
