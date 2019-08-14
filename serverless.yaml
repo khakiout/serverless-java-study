@@ -24,6 +24,10 @@ functions:
       - http:
           path: /template/{proxy+}
           method: any
+  auth:
+    handler: com.komiks.api.ApiGatewayAuthorizerHandler
+    package:
+      artifact: authorizer/build/distributions/authorizer.zip
   inventory:
     handler: com.komiks.api.LambdaEntryPoint::handleRequest
     package:
@@ -48,6 +52,7 @@ functions:
       - http:
           path: /users/{proxy+}
           method: any
+          authorizer: auth
   listProducts:
     handler: com.komiks.api.ListProductsHandler
     package:
