@@ -183,54 +183,44 @@ public class AuthPolicy {
          * Generates a new PolicyDocument with a single statement that allows the requested
          * method/resourcePath.
          *
-         * @param region       API Gateway region
-         * @param awsAccountId AWS Account that owns the API Gateway RestApi
-         * @param restApiId    RestApi identifier
-         * @param stage        Stage name
-         * @param method       HttpMethod to allow
+         * @param metadata     Policy metadata
+         * @param httpMethod   HttpMethod to allow
          * @param resourcePath Resource path to allow
          * @return new PolicyDocument that allows the requested method/resourcePath
          */
-        public static PolicyDocument getAllowOnePolicy(String region, String awsAccountId,
-            String restApiId, String stage, HttpMethod method, String resourcePath) {
-            AuthPolicy.PolicyDocument policyDocument = new AuthPolicy.PolicyDocument(region,
-                awsAccountId, restApiId, stage);
-            policyDocument.allowMethod(method, resourcePath);
+        public static PolicyDocument getAllowOnePolicy(PolicyMetadata metadata,
+            HttpMethod httpMethod, String resourcePath) {
+            AuthPolicy.PolicyDocument policyDocument = new AuthPolicy.PolicyDocument(
+                metadata.region, metadata.awsAccountId, metadata.restApiId, metadata.stage);
+            policyDocument.allowMethod(httpMethod, resourcePath);
             return policyDocument;
-
         }
-
 
         /**
          * Generates a new PolicyDocument with a single statement that denies the requested
          * method/resourcePath.
          *
-         * @param region       API Gateway region
-         * @param awsAccountId AWS Account that owns the API Gateway RestApi
-         * @param restApiId    RestApi identifier
-         * @param stage        Stage name
-         * @param method       HttpMethod to deny
-         * @param resourcePath Resource path to deny
+         * @param metadata     Policy metadata
+         * @param httpMethod   HttpMethod to allow
+         * @param resourcePath Resource path to allow
          * @return new PolicyDocument that denies the requested method/resourcePath
          */
-        public static PolicyDocument getDenyOnePolicy(String region, String awsAccountId,
-            String restApiId, String stage, HttpMethod method, String resourcePath) {
-            AuthPolicy.PolicyDocument policyDocument = new AuthPolicy.PolicyDocument(region,
-                awsAccountId, restApiId, stage);
-            policyDocument.denyMethod(method, resourcePath);
+        public static PolicyDocument getDenyOnePolicy(PolicyMetadata metadata,
+            HttpMethod httpMethod, String resourcePath) {
+            AuthPolicy.PolicyDocument policyDocument = new AuthPolicy.PolicyDocument(
+                metadata.region, metadata.awsAccountId, metadata.restApiId, metadata.stage);
+            policyDocument.denyMethod(httpMethod, resourcePath);
             return policyDocument;
-
         }
 
-        public static AuthPolicy.PolicyDocument getAllowAllPolicy(String region,
-            String awsAccountId, String restApiId, String stage) {
-            return getAllowOnePolicy(region, awsAccountId, restApiId, stage, HttpMethod.ALL, "*");
+        public static AuthPolicy.PolicyDocument getAllowAllPolicy(PolicyMetadata metadata) {
+            return getAllowOnePolicy(metadata, HttpMethod.ALL, "*");
         }
 
-        public static PolicyDocument getDenyAllPolicy(String region, String awsAccountId,
-            String restApiId, String stage) {
-            return getDenyOnePolicy(region, awsAccountId, restApiId, stage, HttpMethod.ALL, "*");
+        public static PolicyDocument getDenyAllPolicy(PolicyMetadata metadata) {
+            return getDenyOnePolicy(metadata, HttpMethod.ALL, "*");
         }
+
     }
 
     public enum HttpMethod {

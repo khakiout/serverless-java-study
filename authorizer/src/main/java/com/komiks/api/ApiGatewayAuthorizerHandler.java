@@ -16,6 +16,7 @@ package com.komiks.api;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.komiks.api.model.AuthPolicy;
+import com.komiks.api.model.PolicyMetadata;
 import com.komiks.api.model.TokenAuthorizerContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -58,18 +59,7 @@ public class ApiGatewayAuthorizerHandler implements
 
         String methodArn = input.getMethodArn();
         logger.info("ARN is {}", methodArn);
-        String[] arnPartials = methodArn.split(":");
-        String region = arnPartials[3];
-        String awsAccountId = arnPartials[4];
-        String[] apiGatewayArnPartials = arnPartials[5].split("/");
-        String restApiId = apiGatewayArnPartials[0];
-        String stage = apiGatewayArnPartials[1];
-        String httpMethod = apiGatewayArnPartials[2];
-        String resource = ""; // root resource
-        if (apiGatewayArnPartials.length == 4) {
-            resource = apiGatewayArnPartials[3];
-        }
-        logger.info("Resource {}", resource);
+        PolicyMetadata metadata = new PolicyMetadata(methodArn);
 
         // this function must generate a policy that is associated with the recognized
         // principal user identifier.
@@ -80,19 +70,16 @@ public class ApiGatewayAuthorizerHandler implements
         // and will apply to subsequent calls to any method/resource in the RestApi
         // made with the same token
 
-        // the example policy below denies access to all resources in the RestApi
-        logger.info("HTTP method {}.", httpMethod);
         AuthPolicy.PolicyDocument policyDocument = null;
         if (token == null || token.isEmpty()) {
             logger.warn("No user");
             policyDocument = AuthPolicy.PolicyDocument
-                .getDenyAllPolicy(region, awsAccountId, restApiId, stage);
+                .getDenyAllPolicy(metadata);
         } else {
-            policyDocument = AuthPolicy.PolicyDocument
-                .getAllowAllPolicy(region, awsAccountId, restApiId, stage);
+            policyDocument = AuthPolicy.PolicyDocument.getAllowOnePolicy(metadata,
+                metadata.getHttpMethod(), metadata.getResourcePath());
         }
 
-        logger.info("PolicyDoc\n{}", policyDocument.getStatement());
         String principalId = "xxxx";
         return new AuthPolicy(principalId, policyDocument);
     }
