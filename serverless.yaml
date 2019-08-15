@@ -44,6 +44,7 @@ functions:
       - http:
           path: /users
           method: GET
+          authorizer: auth
   users:
     handler: com.komiks.api.LambdaEntryPoint::handleRequest
     package:
