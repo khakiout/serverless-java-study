@@ -36,6 +36,15 @@ functions:
       - http:
           path: /inventory/{proxy+}
           method: any
+  usersHome:
+    handler: com.komiks.api.LambdaEntryPoint::handleRequest
+    package:
+      artifact: users/build/distributions/users.zip
+    events:
+      - http:
+          path: /users
+          method: GET
+          authorizer: auth
   users:
     handler: com.komiks.api.LambdaEntryPoint::handleRequest
     package:
