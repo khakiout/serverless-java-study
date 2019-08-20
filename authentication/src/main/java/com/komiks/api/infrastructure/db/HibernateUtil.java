@@ -29,9 +29,9 @@ public class HibernateUtil {
             try {
                 Properties props = new Properties();
                 props.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-                props.put(Environment.URL, "jdbc:mysql://localhost/####");
-                props.put(Environment.USER, "####");
-                props.put(Environment.PASS, "####");
+                props.put(Environment.URL, System.getenv("DB_URL"));
+                props.put(Environment.USER, System.getenv("DB_USER"));
+                props.put(Environment.PASS, System.getenv("DB_PASS"));
                 props.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
                 // Use only for dev, we may need to use flyway or liquibase in the future.
                 props.put(Environment.HBM2DDL_AUTO, "update");
