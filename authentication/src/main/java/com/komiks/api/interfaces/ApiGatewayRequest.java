@@ -1,4 +1,4 @@
-package com.komiks.api;
+package com.komiks.api.interfaces;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;

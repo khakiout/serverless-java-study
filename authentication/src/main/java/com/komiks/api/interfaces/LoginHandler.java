@@ -1,4 +1,4 @@
-package com.komiks.api;
+package com.komiks.api.interfaces;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;

@@ -1,4 +1,4 @@
-package com.komiks.api;
+package com.komiks.api.interfaces;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.JsonProcessingException;
