@@ -7,8 +7,10 @@ import com.komiks.api.commons.JsonUtils;
 import com.komiks.api.domain.Session;
 import com.komiks.api.infrastructure.db.repository.UserRepository;
 import com.komiks.api.infrastructure.db.repository.UserRepositoryImpl;
+import com.komiks.api.interfaces.http.models.response.GenericForbiddenResponse;
 import com.komiks.api.interfaces.http.models.response.GenericMessageResponse;
 import com.komiks.api.interfaces.http.models.response.GenericServerErrorResponse;
+import com.komiks.api.interfaces.http.models.response.GenericUnauthorizedResponse;
 import com.komiks.api.model.request.LoginRequest;
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
@@ -38,7 +40,7 @@ public class LoginHandler implements RequestHandler<ApiGatewayRequest, ApiGatewa
             } else {
                 return ApiGatewayResponse.builder()
                     .setStatusCode(401)
-                    .setObjectBody(new GenericMessageResponse("Credentials invalid"))
+                    .setObjectBody(new GenericUnauthorizedResponse())
                     .build();
             }
         } catch (IOException ex) {

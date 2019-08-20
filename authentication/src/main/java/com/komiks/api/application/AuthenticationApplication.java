@@ -39,7 +39,7 @@ public class AuthenticationApplication {
         User user = this.userRepository.getUser(loginRequest.username);
         Session session = null;
 
-        if (user.getPassword().equals(loginRequest.password)) {
+        if (user != null && user.getPassword().equals(loginRequest.password)) {
             logger.info("User is valid.");
             session = new Session();
             session.setUsername(user.getUsername());
