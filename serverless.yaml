@@ -12,6 +12,12 @@ provider:
   region: ${file(env.yml):${self:custom.stage}.REGION}
   versionFunctions: false
 
+  vpc:
+    securityGroupIds:
+      - ${file(env.yml):${self:custom.stage}.VPC_SECURITY_GROUP}
+    subnetIds:
+      - ${file(env.yml):${self:custom.stage}.VPC_SUBNET}
+
 package:
   individually: true
 
@@ -24,6 +30,14 @@ functions:
       - http:
           path: /template/{proxy+}
           method: any
+  login:
+    handler: com.komiks.api.interfaces.LoginHandler
+    package:
+      artifact: authentication/build/distributions/authentication.zip
+    events:
+      - http:
+          path: /auth/login
+          method: POST
   auth:
     handler: com.komiks.api.ApiGatewayAuthorizerHandler
     package:
