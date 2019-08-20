@@ -15,29 +15,25 @@ public class UserRepositoryImpl extends BaseRepository implements UserRepository
 
     @Override
     public void saveUser(User user) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        Transaction tx = null;
+        EntityManager entityManager = getEntityManager();
         try {
-            tx = session.beginTransaction();
-            session.saveOrUpdate(user);
-            tx.commit();
-            logger.info("User saved.");
-        } catch (PersistenceException e) {
-            logger.error(e);
-            tx.rollback();
+            entityManager.getTransaction().begin();
+            entityManager.persist(user);
+            entityManager.getTransaction().commit();
+        } catch (PersistenceException pe) {
+            logger.error("Failed to save user.", pe);
         } finally {
-            session.close();
+            entityManager.close();
         }
     }
 
     @Override
     public User getUser(String username) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        User user = null;
+        Transaction tx = session.beginTransaction();
 
-        Transaction tx = null;
+        User user = null;
         try {
-            tx = session.beginTransaction();
             user = session.byNaturalId(User.class)
                 .using("username", username)
                 .load();
