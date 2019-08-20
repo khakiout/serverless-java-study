@@ -2,6 +2,9 @@ dependencies {
     implementation project(':commons')
     implementation('com.amazonaws:aws-lambda-java-core:1.2.0')
     implementation('com.amazonaws:aws-lambda-java-log4j2:1.1.0')
+    implementation('io.jsonwebtoken:jjwt-api:0.10.5')
+    implementation('io.jsonwebtoken:jjwt-impl:0.10.5')
+    implementation('io.jsonwebtoken:jjwt-jackson:0.10.5')
 
     implementation('org.hibernate:hibernate-core:5.4.4.Final')
     implementation('mysql:mysql-connector-java:8.0.17')

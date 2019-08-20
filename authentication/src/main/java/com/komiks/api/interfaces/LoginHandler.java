@@ -4,11 +4,10 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.komiks.api.application.AuthenticationApplication;
 import com.komiks.api.commons.JsonUtils;
+import com.komiks.api.commons.JwtService;
 import com.komiks.api.domain.Session;
 import com.komiks.api.infrastructure.db.repository.UserRepository;
 import com.komiks.api.infrastructure.db.repository.UserRepositoryImpl;
-import com.komiks.api.interfaces.http.models.response.GenericForbiddenResponse;
-import com.komiks.api.interfaces.http.models.response.GenericMessageResponse;
 import com.komiks.api.interfaces.http.models.response.GenericServerErrorResponse;
 import com.komiks.api.interfaces.http.models.response.GenericUnauthorizedResponse;
 import com.komiks.api.model.request.LoginRequest;
@@ -20,29 +19,13 @@ public class LoginHandler implements RequestHandler<ApiGatewayRequest, ApiGatewa
 
     private Logger logger = LogManager.getLogger(this.getClass());
 
+    private AuthenticationApplication authenticationApplication;
+
     @Override
     public ApiGatewayResponse handleRequest(ApiGatewayRequest request, Context context) {
-
+        LoginRequest loginRequest;
         try {
-            UserRepository userRepository = new UserRepositoryImpl();
-            AuthenticationApplication application = new AuthenticationApplication(userRepository);
-
-            LoginRequest loginRequest = JsonUtils.parseJson(request.getBody(), LoginRequest.class);
-
-            logger.info("Logging in {}", loginRequest.username);
-            Session session = application.authenticate(loginRequest);
-
-            if (session != null) {
-                return ApiGatewayResponse.builder()
-                    .setStatusCode(200)
-                    .setObjectBody(session)
-                    .build();
-            } else {
-                return ApiGatewayResponse.builder()
-                    .setStatusCode(401)
-                    .setObjectBody(new GenericUnauthorizedResponse())
-                    .build();
-            }
+            loginRequest = JsonUtils.parseJson(request.getBody(), LoginRequest.class);
         } catch (IOException ex) {
             logger.error("Error in retrieving product: " + ex);
 
@@ -52,5 +35,29 @@ public class LoginHandler implements RequestHandler<ApiGatewayRequest, ApiGatewa
                 .setObjectBody(new GenericServerErrorResponse())
                 .build();
         }
+
+        initializeServices();
+        logger.info("Logging in {}", loginRequest.username);
+        Session session = authenticationApplication.authenticate(loginRequest);
+
+        if (session != null) {
+            return ApiGatewayResponse.builder()
+                .setStatusCode(200)
+                .setObjectBody(session)
+                .build();
+        } else {
+            return ApiGatewayResponse.builder()
+                .setStatusCode(401)
+                .setObjectBody(new GenericUnauthorizedResponse())
+                .build();
+        }
+
+    }
+
+    private void initializeServices() {
+        String jwtSecret = System.getenv("JWT_SECRET");
+        JwtService jwtService = new JwtService(jwtSecret);
+        UserRepository userRepository = new UserRepositoryImpl();
+        authenticationApplication = new AuthenticationApplication(jwtService, userRepository);
     }
 }

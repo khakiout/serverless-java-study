@@ -1,5 +1,6 @@
 package com.komiks.api.application;
 
+import com.komiks.api.commons.JwtService;
 import com.komiks.api.domain.Session;
 import com.komiks.api.infrastructure.db.model.User;
 import com.komiks.api.infrastructure.db.repository.UserRepository;
@@ -15,13 +16,15 @@ public class AuthenticationApplication {
     private static final Logger logger = LogManager.getLogger(AuthenticationApplication.class);
 
     private final UserRepository userRepository;
+    private final JwtService jwtService;
 
     /**
      * Initialize the authentication application.
      *
      * @param userRepository the user repository implementation.
      */
-    public AuthenticationApplication(UserRepository userRepository) {
+    public AuthenticationApplication(JwtService jwtService, UserRepository userRepository) {
+        this.jwtService = jwtService;
         this.userRepository = userRepository;
         createUser("admin1", "admin");
         createUser("admin2", "admin");
@@ -43,7 +46,8 @@ public class AuthenticationApplication {
             logger.info("User is valid.");
             session = new Session();
             session.setUsername(user.getUsername());
-            session.setToken("12312312312312321");
+            String token = jwtService.generateToken(user);
+            session.setToken(token);
         } else {
             logger.info("User details is not valid.");
         }
