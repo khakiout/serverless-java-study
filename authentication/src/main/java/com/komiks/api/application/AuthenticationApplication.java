@@ -46,7 +46,7 @@ public class AuthenticationApplication {
             logger.info("User is valid.");
             session = new Session();
             session.setUsername(user.getUsername());
-            String token = jwtService.generateToken(user);
+            String token = jwtService.generateToken(user.getUsername());
             session.setToken(token);
         } else {
             logger.info("User details is not valid.");

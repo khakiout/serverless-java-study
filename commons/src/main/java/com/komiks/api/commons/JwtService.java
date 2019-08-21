@@ -1,12 +1,15 @@
 package com.komiks.api.commons;
 
-import com.komiks.api.infrastructure.db.model.User;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.SignatureException;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.util.Base64;
 import java.util.Date;
@@ -32,16 +35,21 @@ public class JwtService {
 
     /**
      * Get all claims from the submitted JWT token.
-     * 
+     *
      * @param token the JWT token.
      * @return the decoded claims.
      */
-    public Claims getAllClaimsFromToken(String token) {
-        return Jwts.parser().setSigningKey(Base64.getEncoder()
-            .encodeToString(
-                secret.getBytes(StandardCharsets.UTF_8)))
-            .parseClaimsJws(token)
-            .getBody();
+    private Claims getAllClaimsFromToken(String token) {
+        try {
+            return Jwts.parser().setSigningKey(Base64.getEncoder()
+                .encodeToString(
+                    secret.getBytes(StandardCharsets.UTF_8)))
+                .parseClaimsJws(token)
+                .getBody();
+        } catch (SignatureException | ExpiredJwtException
+            | MalformedJwtException | IllegalArgumentException e) {
+            return null;
+        }
     }
 
     /**
@@ -51,25 +59,31 @@ public class JwtService {
      * @return the token.
      */
     public String getUsernameFromToken(String token) {
-        return getAllClaimsFromToken(token).getSubject();
+        if (validateToken(token)) {
+            return getAllClaimsFromToken(token).getSubject();
+        }
+
+        return null;
     }
 
     /**
-     * Generate token from {@linkplain User}.
+     * Generate token for the subject.
      *
-     * @param user - {@linkplain User} for creation of token
+     * @param username the username.
+     * @return the JWT token.
      */
-    public String generateToken(User user) {
+    public String generateToken(String username) {
         Map<String, Object> claims = new HashMap<>();
-        return doGenerateToken(claims, user.getUsername());
+        return doGenerateToken(claims, username);
     }
 
     private String doGenerateToken(Map<String, Object> claims, String username) {
         final LocalDateTime createdLocalDateTime = LocalDateTime.now();
         final LocalDateTime expiryLocalDateTime = createdLocalDateTime.plusMinutes(5);
 
-        final Date createdDate = Date.from(createdLocalDateTime.toInstant(ZoneOffset.UTC));
-        final Date expiryDate = Date.from(expiryLocalDateTime.toInstant(ZoneOffset.UTC));
+        ZoneOffset zoneOffset = ZoneId.systemDefault().getRules().getOffset(createdLocalDateTime);
+        final Date createdDate = Date.from(createdLocalDateTime.toInstant(zoneOffset));
+        final Date expiryDate = Date.from(expiryLocalDateTime.toInstant(zoneOffset));
 
         Key key = new SecretKeySpec(
             secret.getBytes(StandardCharsets.UTF_8),

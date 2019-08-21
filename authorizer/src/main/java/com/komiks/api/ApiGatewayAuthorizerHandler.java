@@ -1,20 +1,8 @@
-/*
- * Copyright 2015-2016 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file
- * except in compliance with the License. A copy of the License is located at
- *
- *     http://aws.amazon.com/apache2.0/
- *
- * or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for
- * the specific language governing permissions and limitations under the License.
- */
-
 package com.komiks.api;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
+import com.komiks.api.commons.JwtService;
 import com.komiks.api.model.AuthPolicy;
 import com.komiks.api.model.PolicyMetadata;
 import com.komiks.api.model.TokenAuthorizerContext;
@@ -71,7 +59,11 @@ public class ApiGatewayAuthorizerHandler implements
         // made with the same token
 
         AuthPolicy.PolicyDocument policyDocument = null;
-        if (token == null || token.isEmpty()) {
+        String jwtSecret = System.getenv("JWT_SECRET");
+        JwtService jwtService = new JwtService(jwtSecret);
+        String username = jwtService.getUsernameFromToken(token);
+
+        if (username == null) {
             logger.warn("No user");
             policyDocument = AuthPolicy.PolicyDocument
                 .getDenyAllPolicy(metadata);
