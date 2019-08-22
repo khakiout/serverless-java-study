@@ -24,12 +24,7 @@ public class JwtServiceTest {
     public void testValidationOfValidToken() {
         String jwt = jwtService.generateToken("admin");
         System.out.println(jwt);
-        String token = "eyJhbGciOiJIUzUxMiJ9."
-            + "eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU2NjQyNTkwNSwiZXhwIjoxNTY2NDI2MjA1fQ."
-            + "VZPuq5WZAmhXDuyqfoQA9GK5NjfTMCdTcHjOt5tAfsg4YxmUsQF08HGZpF6IFuaPUCOX2Hl"
-            + "OsvOpe0FN0DkfnQ";
-
-        String username = jwtService.getUsernameFromToken(token);
+        String username = jwtService.getUsernameFromToken(jwt);
         assertEquals("admin", username);
     }
 
