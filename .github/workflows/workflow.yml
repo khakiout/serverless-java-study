@@ -10,23 +10,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v1
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name: Build with Gradle
-      run: ./gradlew build
     - name: Copy ENV file
-      run: echo ${ENV_YML} > env.yml
+      run: echo "${ENV_YML}" > env.yml
       env:
         ENV_YML: ${{ secrets.ENV_YML }}
-    - name: List Files
-      run: ls -lh *
-    - name: Serverless deployment
-      uses: serverless/github-action@v1.49.0
-      with:
-        args: deploy --noDeploy
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        SLS_DEBUG: "*"
+    - run: cat env.yml | wc -l
+    - run: cat env.yml
+    - run: ls -lh .
+    - run: cat build.gradle
+
