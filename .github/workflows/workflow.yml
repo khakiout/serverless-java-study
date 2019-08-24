@@ -22,15 +22,15 @@ jobs:
 
     steps:
       - name: Copy ENV file
+        run: echo ${ENV_YML} > env.yml
         env:
           ENV_YML: ${{ secrets.ENV_YML }}
-        run: echo ${ENV_YML} > env.yml
       - name: List Files
         run: ls -lh *
-      - uses: serverless/github-actions@v1.49.0
-        name: Serverless deployment
+      - name: Serverless deployment
+        uses: serverless/github-action@v1.49.0
+        with:
+          args: deploy --noDeploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: deploy --noDeploy
-
