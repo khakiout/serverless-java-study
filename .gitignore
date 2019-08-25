@@ -34,3 +34,8 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Javascript ###
+# package directories
+node_modules
+jspm_packages
