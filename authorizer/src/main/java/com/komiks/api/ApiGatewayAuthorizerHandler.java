@@ -68,11 +68,11 @@ public class ApiGatewayAuthorizerHandler implements
             policyDocument = AuthPolicy.PolicyDocument
                 .getDenyAllPolicy(metadata);
         } else {
-            policyDocument = AuthPolicy.PolicyDocument.getAllowOnePolicy(metadata,
-                metadata.getHttpMethod(), metadata.getResourcePath());
+            logger.info("User has valid rights.");
+            policyDocument = AuthPolicy.PolicyDocument.getAllowAllPolicy(metadata);
         }
 
-        String principalId = "xxxx";
+        String principalId = username;
         return new AuthPolicy(principalId, policyDocument);
     }
 
