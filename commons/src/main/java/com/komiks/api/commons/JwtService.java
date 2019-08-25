@@ -5,6 +5,7 @@ import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.io.DecodingException;
 import io.jsonwebtoken.security.SignatureException;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
@@ -40,13 +41,18 @@ public class JwtService {
      * @return the decoded claims.
      */
     private Claims getAllClaimsFromToken(String token) {
+        String bearer = "BEARER ";
+        if (token != null && token.toUpperCase().startsWith(bearer)) {
+            token = token.substring(bearer.length());
+        }
+
         try {
             return Jwts.parser().setSigningKey(Base64.getEncoder()
                 .encodeToString(
                     secret.getBytes(StandardCharsets.UTF_8)))
                 .parseClaimsJws(token)
                 .getBody();
-        } catch (SignatureException | ExpiredJwtException
+        } catch (SignatureException | DecodingException | ExpiredJwtException
             | MalformedJwtException | IllegalArgumentException e) {
             return null;
         }

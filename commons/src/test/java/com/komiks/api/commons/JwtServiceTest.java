@@ -21,11 +21,31 @@ public class JwtServiceTest {
     }
 
     @Test
+    public void testValidationOfValidTokenWithBearerType() {
+        String jwt = jwtService.generateToken("admin");
+        System.out.println(jwt);
+        String token = "Bearer " + jwt;
+        String username = jwtService.getUsernameFromToken(token);
+        assertEquals("admin", username);
+    }
+
+    @Test
     public void testValidationOfValidToken() {
         String jwt = jwtService.generateToken("admin");
         System.out.println(jwt);
         String username = jwtService.getUsernameFromToken(jwt);
         assertEquals("admin", username);
+    }
+
+    @Test
+    public void testValidationOfExpiredJwtTokenWithBearerType() {
+        String token = "Bearer eyJhbGciOiJIUzUxMiJ9."
+            + "eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU2NjMwMzc4MywiZXhwIjoxNTY2Mzg1NzgzfQ."
+            + "u_Su8Awe7-Rf9APltbYo0DVBNKbqy1bd5sGOvOT2HCqcbIQ3iQwMXrGGGZGAQyaDpDf"
+            + "PZTLfQJWe8uv0fNlwmQ";
+
+        String username = jwtService.getUsernameFromToken(token);
+        assertNull(username);
     }
 
     @Test
@@ -42,6 +62,14 @@ public class JwtServiceTest {
     @Test
     public void testValidationOfGibberishToken() {
         String token = "eyJhbGciOiJIdasdaNjfTMCdTc";
+
+        String username = jwtService.getUsernameFromToken(token);
+        assertNull(username);
+    }
+
+    @Test
+    public void testValidationOfFakeToken() {
+        String token = "Bearer eyJhbGci.OiJIdas.daNjfTMCdTc";
 
         String username = jwtService.getUsernameFromToken(token);
         assertNull(username);
