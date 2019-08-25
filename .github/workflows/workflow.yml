@@ -8,19 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: checkout code
       uses: actions/checkout@v1
 
-    - name: GitHub Action for npm
+    - name: npm install
       uses: actions/npm@1.0.0
       with:
         args: install
 
-    - name: List Files
-      run: ls -lh *
-
-    - name: Serverless deployment
-      uses: serverless/github-action@v1.49.0
+    - name: serverless deploy
+      uses: serverless/github-action@master
       with:
         args: deploy
       env:
