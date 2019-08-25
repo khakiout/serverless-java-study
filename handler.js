@@ -13,5 +13,8 @@ hello.get('/world', async (req, res, next) => {
 hello.get('/earth', async (req, res, next) => {
  res.status(200).send('Hello Earth!!')
 })
+hello.get('/mars', async (req, res, next) => {
+ res.status(200).send('Hello Mars!!')
+})
 
 module.exports.server = sls(hello)
