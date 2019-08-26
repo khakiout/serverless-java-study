@@ -2,5 +2,9 @@ dependencies {
     implementation('commons-validator:commons-validator:1.4.0')
     implementation('javax.validation:validation-api:2.0.0.Final')
 
+    implementation('io.jsonwebtoken:jjwt-api:0.10.5')
+    implementation('io.jsonwebtoken:jjwt-impl:0.10.5')
+    implementation('io.jsonwebtoken:jjwt-jackson:0.10.5')
+
     testImplementation('junit:junit:4.12')
 }
