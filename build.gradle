@@ -68,8 +68,3 @@ subprojects {
 	}
 
 }
-
-dependencies {
-	compile project(':template')
-}
-
