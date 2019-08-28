@@ -36,6 +36,7 @@ functions:
       - http:
           path: /inventory/{proxy+}
           method: any
+          authorizer: auth
   usersHome:
     handler: com.komiks.api.LambdaEntryPoint::handleRequest
     package:
@@ -61,7 +62,8 @@ functions:
     events:
       - http:
           path: /products
-          method: get
+          method: GET
+          authorizer: auth
   getProduct:
     handler: com.komiks.api.GetProductHandler
     package:
@@ -69,4 +71,5 @@ functions:
     events:
       - http:
           path: /products/{id}
-          method: get
+          method: GET
+          authorizer: auth
