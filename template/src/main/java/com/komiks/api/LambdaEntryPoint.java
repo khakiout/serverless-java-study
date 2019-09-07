@@ -16,7 +16,7 @@ public class LambdaEntryPoint extends ApiGatewayProxyHandler {
     static {
         SpringApplication application = new SpringApplication();
         application
-            .addPrimarySources(Collections.singleton(ServerlessWebApplicationConfiguration.class));
+            .addPrimarySources(Collections.singleton(TemplateApiServiceApplication.class));
         application.setWebApplicationType(WebApplicationType.REACTIVE);
         application.setApplicationContextClass(GenericReactiveWebApplicationContext.class);
 
