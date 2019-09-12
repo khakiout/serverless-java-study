@@ -23,11 +23,11 @@ subprojects {
 	apply plugin: 'pmd'
 
 	task buildZip(type: Zip) {
-		archiveName = "${project.name}.zip"
+		archiveFileName = "${project.name}.zip"
 		from compileJava
 		from processResources
 		into('lib') {
-			from configurations.compileClasspath
+			from configurations.runtimeClasspath
 		}
 	}
 	build.dependsOn buildZip
