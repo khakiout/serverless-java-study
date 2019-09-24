@@ -1,0 +1,421 @@
+id,name,urban_rural,population,city,province,region
+898,Bangkal,Urban,21077,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+899,Bel-Air,Urban,30296,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+900,Cembo,Urban,26589,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+901,Comembo,Urban,15094,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+902,Carmona,Urban,3709,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+903,Dasmariñas,Urban,9173,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+904,East Rembo,Urban,23119,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+905,Forbes Park,Urban,7192,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+906,Guadalupe Nuevo,Urban,23359,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+907,Guadalupe Viejo,Urban,13480,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+908,Kasilawan,Urban,5756,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+909,La Paz,Urban,8974,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+910,Magallanes,Urban,8579,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+911,Olympia,Urban,22119,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+912,Palanan,Urban,19689,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+913,Pembo,Urban,38332,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+914,Pinagkaisahan,Urban,5325,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+915,Pio Del Pilar,Urban,30240,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+916,Pitogo,Urban,14984,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+917,Poblacion,Urban,20182,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+918,Post Proper Northside,Urban,0,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+919,Post Proper Southside,Urban,0,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+920,San Antonio,Urban,11673,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+921,San Isidro,Urban,7615,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+922,San Lorenzo,Urban,15144,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+923,Santa Cruz,Urban,6499,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+924,Singkamas,Urban,6623,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+925,South Cembo,Urban,15186,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+926,Tejeros,Urban,17690,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+927,Urdaneta,Urban,7068,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+928,Valenzuela,Urban,7459,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+929,West Rembo,Urban,28578,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+930,Rizal,Urban,39580,CITY OF MAKATI,METRO MANILA,NCR - National Capital Region
+931,Alabang,Urban,59512,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+932,Bayanan,Urban,35865,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+933,Buli,Urban,8842,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+934,Cupang,Urban,63149,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+935,Poblacion,Urban,69600,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+936,Putatan,Urban,88073,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+937,Sucat,Urban,52174,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+938,Tunasan,Urban,55502,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+939,New Alabang Village,Urban,20226,CITY OF MUNTINLUPA,METRO MANILA,NCR - National Capital Region
+940,Baclaran,Urban,26159,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+941,Don Galo,Urban,9106,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+942,La Huerta,Urban,7298,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+943,San Dionisio,Urban,60175,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+944,Santo Niño,Urban,28019,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+945,Tambo,Urban,25371,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+946,B. F. Homes,Urban,80316,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+947,Don Bosco,Urban,42338,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+948,Marcelo Green Village,Urban,28103,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+949,Merville,Urban,17118,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+950,Moonwalk,Urban,49680,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+951,San Antonio,Urban,55719,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+952,San Isidro,Urban,60405,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+953,San Martin De Porres,Urban,23519,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+954,Sun Valley,Urban,35448,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+955,Vitalez,Urban,3886,CITY OF PARAÑAQUE,METRO MANILA,NCR - National Capital Region
+1157,Aguho,Urban,6769,PATEROS,METRO MANILA,NCR - National Capital Region
+1158,Magtanggol,Urban,1734,PATEROS,METRO MANILA,NCR - National Capital Region
+1159,Martires Del 96,Urban,4235,PATEROS,METRO MANILA,NCR - National Capital Region
+1160,Poblacion,Urban,2571,PATEROS,METRO MANILA,NCR - National Capital Region
+1161,San Pedro,Urban,2276,PATEROS,METRO MANILA,NCR - National Capital Region
+1162,San Roque,Urban,4436,PATEROS,METRO MANILA,NCR - National Capital Region
+1163,Santa Ana,Urban,26005,PATEROS,METRO MANILA,NCR - National Capital Region
+1164,Santo Rosario-Kanluran,Urban,6042,PATEROS,METRO MANILA,NCR - National Capital Region
+1165,Santo Rosario-Silangan,Urban,5054,PATEROS,METRO MANILA,NCR - National Capital Region
+1166,Tabacalera,Urban,2818,PATEROS,METRO MANILA,NCR - National Capital Region
+1167,Tanyag (Bagong Tanyag),Urban,43452,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1168,Bagumbayan,Urban,31777,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1169,Bambang,Urban,6199,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1170,Calzada,Urban,14822,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1171,Hagonoy,Urban,21181,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1172,Ibayo-Tipas,Urban,18031,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1173,Ligid-Tipas,Urban,7839,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1174,Lower Bicutan,Urban,79886,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1175,Maharlika Village,Urban,16474,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1176,Napindan,Urban,11623,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1177,Palingon,Urban,10625,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1178,Santa Ana,Urban,14946,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1179,Central Signal Village (Signal Village),Urban,107906,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1180,Tuktukan,Urban,8011,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1181,Upper Bicutan,Urban,62570,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1182,Ususan,Urban,25182,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1183,Wawa,Urban,8662,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1184,Western Bicutan,Urban,124157,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1185,Central Bicutan,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1186,Fort Bonifacio,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1187,Katuparan,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1188,New Lower Bicutan,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1189,North Daan Hari,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1190,North Signal Village,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1191,Pinagsama,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1192,San Miguel,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1193,South Daan Hari,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1194,South Signal Village,Rural,0,TAGUIG CITY,METRO MANILA,NCR - National Capital Region
+1195,Barangka,Urban,17424,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1196,Calumpang,Urban,15589,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1197,Concepcion Uno,Urban,40277,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1198,Jesus De La Peña,Urban,8553,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1199,Malanday,Urban,51363,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1200,Nangka,Urban,41837,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1201,Parang,Urban,36333,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1202,San Roque,Urban,18756,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1203,Santa Elena (Pob.),Urban,7008,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1204,Santo Niño,Urban,24694,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1205,Tañong,Urban,9360,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1206,Concepcion Dos,Urban,27809,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1207,Marikina Heights (Concepcion),Urban,37818,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1208,Industrial Valley,Urban,14050,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1209,Fortune,Urban,34111,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1210,Tumana,Urban,39628,CITY OF MARIKINA,METRO MANILA,NCR - National Capital Region
+1211,Bagong Ilog,Urban,15454,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1212,Bagong Katipunan,Urban,1185,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1213,Bambang,Urban,19258,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1214,Buting,Urban,9073,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1215,Caniogan,Urban,21769,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1216,Dela Paz,Urban,13047,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1217,Kalawaan,Urban,23442,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1218,Kapasigan,Urban,6569,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1219,Kapitolyo,Urban,10451,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1220,Malinao,Urban,5957,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1221,Manggahan,Urban,34270,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1222,Maybunga,Urban,35627,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1223,Oranbo,Urban,4395,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1224,Palatiw,Urban,16929,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1225,Pinagbuhatan,Urban,105435,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1226,Pineda,Urban,15013,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1227,Rosario,Urban,50690,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1228,Sagad,Urban,6887,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1229,San Antonio,Urban,11666,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1230,San Joaquin,Urban,12498,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1231,San Jose,Urban,2347,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1232,San Miguel,Urban,30069,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1233,San Nicolas (Pob.),Urban,1542,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1234,Santa Cruz,Urban,4367,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1235,Santa Rosa,Urban,1515,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1236,Santo Tomas,Urban,6375,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1237,Santolan,Urban,43286,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1238,Sumilang,Urban,5392,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1239,Ugong,Urban,22266,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1240,Santa Lucia,Urban,40553,CITY OF PASIG,METRO MANILA,NCR - National Capital Region
+1241,Alicia,Urban,6276,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1242,Amihan,Urban,4545,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1243,Apolonio Samson,Urban,35397,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1244,Aurora,Urban,5382,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1245,Baesa,Urban,55414,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1246,Bagbag,Urban,33249,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1247,Bagumbuhay,Urban,6507,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1248,Bagong Lipunan Ng Crame,Urban,12398,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1249,Bagong Pag-asa,Urban,46365,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1250,Bagong Silangan,Urban,73612,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1251,Bagumbayan,Urban,9209,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1252,Bahay Toro,Urban,65767,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1253,Balingasa,Urban,19947,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1254,Bayanihan,Urban,1099,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1255,Blue Ridge A,Urban,1743,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1256,Blue Ridge B,Urban,1504,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1257,Botocan,Urban,8822,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1258,Bungad,Urban,7799,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1259,Camp Aguinaldo,Urban,5261,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1260,Central,Urban,19082,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1261,Claro,Urban,4304,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1262,Commonwealth,Urban,172834,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1263,New Era (Constitution Hills),Urban,7911,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1264,Kristong Hari,Urban,3409,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1265,Culiat,Urban,68618,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1266,Damar,Urban,1542,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1267,Damayan,Urban,7896,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1268,Damayang Lagi,Urban,20260,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1269,Del Monte,Urban,11035,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1270,Dioquino Zobel,Urban,1672,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1271,Doña Imelda,Urban,17647,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1272,Doña Josefa,Urban,3163,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1273,Don Manuel,Urban,3702,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1274,Duyan-duyan,Urban,3129,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1275,E. Rodriguez,Urban,19253,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1276,East Kamias,Urban,6149,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1277,Escopa I,Urban,2239,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1278,Escopa II,Urban,1850,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1279,Escopa III,Urban,8123,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1280,Escopa IV,Urban,1865,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1281,Fairview,Urban,47464,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1282,N.S. Amoranto (Gintong Silahis),Urban,7408,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1283,Gulod,Urban,56620,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1284,Horseshoe,Urban,2698,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1285,Immaculate Concepcion,Urban,8728,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1286,Kaligayahan,Urban,44018,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1287,Kalusugan,Urban,3652,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1288,Kamuning,Urban,15318,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1289,Katipunan,Urban,2335,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1290,Kaunlaran,Urban,7743,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1291,Krus Na Ligas,Urban,21089,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1292,Laging Handa,Urban,5540,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1293,Libis,Urban,4611,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1294,Lourdes,Urban,4762,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1295,Loyola Heights,Urban,17517,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1296,Maharlika,Urban,4728,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1297,Malaya,Urban,3702,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1298,Manresa,Urban,17501,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1299,Mangga,Urban,634,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1300,Mariana,Urban,11079,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1301,Mariblo,Urban,4076,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1302,Marilag,Urban,9855,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1303,Masagana,Urban,4774,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1304,Masambong,Urban,11694,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1305,Santo Domingo (Matalahib),Urban,13075,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1306,Matandang Balara,Urban,70112,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1307,Milagrosa,Urban,4929,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1308,Nagkaisang Nayon,Urban,46064,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1309,Nayong Kanluran,Urban,1984,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1310,Novaliches Proper,Urban,14737,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1311,Obrero,Urban,8338,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1312,Old Capitol Site,Urban,1974,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1313,Paang Bundok,Urban,5469,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1314,Pag-ibig Sa Nayon,Urban,5364,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1315,Paligsahan,Urban,4755,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1316,Paltok,Urban,17171,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1317,Pansol,Urban,24246,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1318,Paraiso,Urban,3518,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1319,Pasong Putik Proper (Pasong Putik),Urban,28848,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1320,Pasong Tamo,Urban,82340,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1321,Phil-Am,Urban,2877,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1322,Pinyahan,Urban,26381,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1323,Pinagkaisahan,Urban,7215,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1324,Project 6,Urban,13397,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1325,Quirino 2-A,Urban,5342,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1326,Quirino 2-B,Urban,4277,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1327,Quirino 2-C,Urban,3079,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1328,Quirino 3-A,Urban,1172,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1329,Ramon Magsaysay,Urban,15574,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1330,Roxas,Urban,14379,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1331,Sacred Heart,Urban,7168,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1332,Saint Ignatius,Urban,2174,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1333,Saint Peter,Urban,5197,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1334,Salvacion,Urban,9211,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1335,San Agustin,Urban,22284,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1336,San Antonio,Urban,24666,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1337,San Bartolome,Urban,44631,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1338,San Isidro,Urban,7424,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1339,San Isidro Labrador,Urban,7261,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1340,San Jose,Urban,6277,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1341,San Martin De Porres,Urban,13091,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1342,San Roque,Urban,20229,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1343,San Vicente,Urban,6157,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1344,Santa Cruz,Urban,5031,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1345,Santa Lucia,Urban,24050,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1346,Santa Monica,Urban,44186,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1347,Santa Teresita,Urban,8840,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1348,Santo Cristo,Urban,8486,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1349,Santo Niño,Urban,9382,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1350,Santol,Urban,8519,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1351,Sauyo,Urban,67587,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1352,Sienna,Urban,3997,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1353,Sikatuna Village,Urban,6673,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1354,Silangan,Urban,4802,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1355,Socorro,Urban,23546,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1356,South Triangle,Urban,12333,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1357,Tagumpay,Urban,2128,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1358,Talayan,Urban,5515,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1359,Talipapa,Urban,34632,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1360,Tandang Sora,Urban,74863,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1361,Tatalon,Urban,57930,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1362,Teachers Village East,Urban,3065,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1363,Teachers Village West,Urban,4341,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1364,U.P. Campus,Urban,34119,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1365,U.P. Village,Urban,4558,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1366,Ugong Norte,Urban,6822,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1367,Unang Sigaw,Urban,7059,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1368,Valencia,Urban,7671,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1369,Vasra,Urban,6543,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1370,Veterans Village,Urban,9635,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1371,Villa Maria Clara,Urban,2180,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1372,West Kamias,Urban,4533,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1373,West Triangle,Urban,3486,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1374,White Plains,Urban,3803,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1375,Balong Bato,Urban,7501,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1376,Capri,Urban,12427,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1377,Sangandaan,Urban,24100,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1378,Payatas,Urban,117001,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1379,Batasan Hills,Urban,148624,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1380,Holy Spirit,Urban,106038,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1381,Greater Lagro,Urban,21297,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1382,North Fairview,Urban,36235,QUEZON CITY,METRO MANILA,NCR - National Capital Region
+1383,Addition Hills,Urban,3104,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1384,Balong-Bato,Urban,7079,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1385,Batis,Urban,8855,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1386,Corazon De Jesus,Urban,11894,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1387,Ermitaño,Urban,3110,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1388,Halo-halo (St. Joseph),Urban,4336,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1389,Isabelita,Urban,1511,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1390,Kabayanan,Urban,4804,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1391,Little Baguio,Urban,5484,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1392,Maytunas,Urban,2816,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1393,Onse,Urban,3359,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1394,Pasadeña,Urban,4203,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1395,Pedro Cruz,Urban,4123,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1396,Progreso,Urban,1974,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1397,Rivera,Urban,2917,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1398,Salapan,Urban,8850,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1399,San Perfecto,Urban,4493,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1400,Santa Lucia,Urban,7193,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1401,Tibagan,Urban,3051,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1402,West Crame,Urban,15550,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1403,Greenhills,Urban,16632,CITY OF SAN JUAN,METRO MANILA,NCR - National Capital Region
+1404,Acacia,Urban,5482,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1405,Baritan,Urban,10953,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1406,Bayan-bayanan,Urban,6950,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1407,Catmon,Urban,36804,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1408,Concepcion,Urban,12497,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1409,Dampalit,Urban,12087,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1410,Flores,Urban,4128,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1411,Hulong Duhat,Urban,11987,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1412,Ibaba,Urban,9629,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1413,Longos,Urban,51113,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1414,Maysilo,Urban,11104,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1415,Muzon,Urban,5683,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1416,Niugan,Urban,5831,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1417,Panghulo,Urban,12264,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1418,Potrero,Urban,45081,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1419,San Agustin,Urban,11169,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1420,Santolan,Urban,12758,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1421,Tañong (Pob.),Urban,16257,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1422,Tinajeros,Urban,18387,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1423,Tonsuya,Urban,40221,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1424,Tugatog,Urban,23296,CITY OF MALABON,METRO MANILA,NCR - National Capital Region
+1425,Sipac-Almacen,Urban,11304,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1426,Bagumbayan North,Urban,3388,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1427,Bagumbayan South,Urban,4710,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1428,Bangculasi,Urban,7437,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1429,Daanghari,Urban,18932,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1430,Navotas East,Urban,2299,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1431,Navotas West,Urban,8738,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1432,"North Bay Blvd., North",Urban,15970,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1433,"North Bay Blvd., South",Urban,66566,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1434,San Jose (Pob.),Urban,27342,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1435,San Rafael Village,Urban,3662,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1436,San Roque,Urban,18062,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1437,Tangos,Urban,33211,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1438,Tanza,Urban,23723,CITY OF NAVOTAS,METRO MANILA,NCR - National Capital Region
+1439,Arkong Bato,Urban,8170,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1440,Bagbaguin,Urban,11954,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1441,Balangkas,Urban,10663,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1442,Parada,Urban,16059,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1443,Bignay,Urban,19915,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1444,Bisig,Urban,1262,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1445,Canumay West (Canumay),Urban,28192,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1446,Karuhatan,Urban,37750,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1447,Coloong,Urban,10675,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1448,Dalandanan,Urban,17920,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1449,Hen. T. De Leon,Urban,95536,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1450,Isla,Urban,4257,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1451,Lawang Bato,Urban,14770,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1452,Lingunan,Urban,14661,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1453,Mabolo,Urban,1465,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1454,Malanday,Urban,18769,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1455,Malinta,Urban,44042,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1456,Mapulang Lupa,Urban,23400,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1457,Marulas,Urban,54753,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1458,Maysan,Urban,26993,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1459,Palasan,Urban,6068,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1460,Pariancillo Villa,Urban,1317,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1461,Paso De Blas,Urban,13229,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1462,Pasolo,Urban,6086,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1463,Poblacion,Urban,393,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1464,Pulo,Urban,1130,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1465,Punturin,Urban,14375,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1466,Rincon,Urban,6152,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1467,Tagalag,Urban,3272,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1468,Ugong,Urban,30779,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1469,Viente Reales,Urban,21879,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1470,Wawang Pulo,Urban,3042,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+1471,Canumay East (Canumay),Urban,0,CITY OF VALENZUELA,METRO MANILA,NCR - National Capital Region
+39850,Almanza Uno,Urban,30074,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39851,Daniel Fajardo,Urban,14690,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39852,Elias Aldana,Urban,10342,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39853,Ilaya,Urban,6196,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39854,Manuyo Uno,Urban,12057,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39855,Pamplona Uno,Urban,15272,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39856,Pulang Lupa Uno,Urban,33838,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39857,Talon Uno,Urban,28109,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39858,Zapote,Urban,17944,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39859,Almanza Dos,Urban,35337,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39860,B. F. International Village,Urban,68912,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39861,Manuyo Dos,Urban,26094,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39862,Pamplona Dos,Urban,8408,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39863,Pamplona Tres,Urban,31215,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39864,Pilar,Urban,31583,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39865,Pulang Lupa Dos,Urban,31922,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39866,Talon Dos,Urban,47479,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39867,Talon Tres,Urban,25083,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39868,Talon Kuatro,Urban,21547,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39869,Talon Singko,Urban,36228,CITY OF LAS PIÑAS,METRO MANILA,NCR - National Capital Region
+39870,Addition Hills,Urban,81221,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39871,Bagong Silang,Urban,3747,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39872,Barangka Drive,Urban,12134,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39873,Barangka Ibaba,Urban,9372,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39874,Barangka Ilaya,Urban,4185,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39875,Barangka Itaas,Urban,11212,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39876,Burol,Urban,2322,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39877,Buayang Bato,Urban,999,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39878,Daang Bakal,Urban,2980,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39879,Hagdang Bato Itaas,Urban,9431,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39880,Hagdang Bato Libis,Urban,6241,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39881,Harapin Ang Bukas,Urban,4069,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39882,Highway Hills,Urban,18682,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39883,Hulo,Urban,20850,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39884,Mabini-J. Rizal,Urban,4826,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39885,Malamig,Urban,6898,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39886,Mauway,Urban,21700,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39887,Namayan,Urban,4846,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39888,New Za?iga,Urban,5413,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39889,Old Za?iga,Urban,6674,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39890,Pag-asa,Urban,3112,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39891,Plainview,Urban,24706,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39892,Pleasant Hills,Urban,6495,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39893,Poblacion,Urban,14778,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39894,San Jose,Urban,7629,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39895,Vergara,Urban,4928,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital Region
+39896,Wack-wack Greenhills,Urban,6126,CITY OF MANDALUYONG,METRO MANILA,NCR - National Capital region
